@@ -1,0 +1,19 @@
+https://github.com/DeborahK/Angular-RxJS
+
+https://app.pluralsight.com/library/courses/rxjs-angular-reactive-development
+
+
+
+cd /media/tcma/SeagateBackupPlusDrive/
+
+mkdir angularRxjs && cd "$_"
+
+
+
+curl -OL https://github.com/DeborahK/Angular-RxJS/archive/master.zip
+
+
+
+unzip *.zip
+
+
