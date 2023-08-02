@@ -1,0 +1,36 @@
+cdm
+cd angularRxjs
+
+cd /media/tcma/SeagateBackupPlusDrive/angularRxjs
+
+mkdir angularRxjsDemo && cd "$_"
+
+ng new demo --minimal --defaults
+
+
+cd demo
+
+
+
+Thomas Laforge
+https://itnext.io/share-sharereplay-refcount-a38ae29a19d
+
+ng generate component
+ng g c count
+ng g c count --standalone
+
+=
+
+cdm
+cd angularRxjs
+
+cd angularRxjsDemo
+
+
+ng new demo-standalone --standalone --minimal --defaults
+
+cd demo-standalone
+
+ng g c count
+
+
