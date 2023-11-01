@@ -1,0 +1,49 @@
+Armen Vardanyan
+https://dev.to/this-is-angular/understanding-rxjs-use-cases-part-i-2mfb
+
+https://indepth.dev/posts/1162/rxjs-in-angular-part-1
+
+https://indepth.dev/posts/1316/rxjs-in-angular-part-ii
+
+
+
+Connie Leung
+
+add, delete and check items in a list, and synchronize data with local storage
+https://dev.to/railsstudent/synchronize-data-with-local-storage-using-rxjs-and-angular-21mf
+https://github.com/railsstudent/ng-rxjs-30/tree/main/projects/day15-local-storage
+https://railsstudent.github.io/ng-rxjs-30/day15-local-storage/
+cd /media/tcma/SeagateBackupPlusDrive/angularRxjs
+
+ng new angular-ConnieLeung-day15
+
+cd angular-ConnieLeung-day15
+
+ng generate application day15-local-storage
+
+
+https://dev.to/railsstudent/sort-data-without-articles-using-rxjs-and-angular-303i
+https://github.com/railsstudent/ng-rxjs-30/tree/main/projects/day17-sorted-without-articles
+https://railsstudent.github.io/ng-rxjs-30/day17-sorted-without-articles/
+
+https://dev.to/railsstudent/create-custom-operators-to-sum-and-sort-rxjs-streams-4p4k
+https://github.com/railsstudent/ng-rxjs-30/tree/main/projects/day4-array-cardio-part1
+https://railsstudent.github.io/ng-rxjs-30/day4-array-cardio-part1/
+
+
+https://dev.to/railsstudent/build-a-reactive-countdown-timer-using-rxjs-and-angular-1iff
+
+Follow along link highlighter using RxJS and Angular
+https://dev.to/railsstudent/follow-along-link-highlighter-using-rxjs-and-angular-2fjo
+https://github.com/railsstudent/ng-rxjs-30/tree/main/projects/day22-follow-along-link-highlighter
+https://railsstudent.github.io/ng-rxjs-30/day22-follow-along-link-highlighter/
+
+https://dev.to/railsstudent/sticky-navigation-bar-after-scroll-using-rxjs-and-angular-4jjh
+https://github.com/railsstudent/ng-rxjs-30/tree/main/projects/day24-sticky-nav
+https://railsstudent.github.io/ng-rxjs-30/day24-sticky-nav/
+
+Text to speech tutorial using RxJS and Angular
+English text to speech tutorial. The Web Speech API provides interfaces to make speech request and turn text into speech according to the selected voice.
+https://dev.to/railsstudent/text-to-speech-tutorial-using-rxjs-and-angular-38je
+https://github.com/railsstudent/ng-rxjs-30/tree/main/projects/day23-speech-synthesis
+https://railsstudent.github.io/ng-rxjs-30/day23-speech-synthesis/

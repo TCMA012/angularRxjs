@@ -1,0 +1,80 @@
+angular rxjs
+angular Subscription
+
+https://netbasal.com/rxjs-subjects-for-human-beings-7807818d4e4d
+
+
+
+https://levelup.gitconnected.com/master-rxjs-data-stores-in-services-c1f553e5d48b
+Lars Holdaas
+a lot of the methods described below like deep freezing and naive object comparison will not work correctly for certain data types, such as not only Map, Set, WeakMap and WeakSet, but also function. Hopefully you’re not storing any of these types in your base BehaviorSubject in a service, but if you are, be aware that you will have to manually circumvent any issues relating to these.
+
+https://javascript.plainenglish.io/grasp-rxjs-observable-vs-subject-vs-behaviorsubject-in-ui-components-d34b95761814
+
+
+
+
+
+https://upmostly.com/angular/subject-vs-replaysubject-vs-behaviorsubject
+
+
+
+
+
+BehaviorSubject
+https://javascript.plainenglish.io/creating-observable-using-behavior-subject-in-angular-93a949f54d18
+
+
+
+catchError
+debounceTime
+distinctUntilChanged
+filter
+first
+
+
+
+forkJoin
+
+https://careydevelopment.us/blog/angular-use-forkjoin-to-wait-for-all-asynchronous-requests-to-complete-before-loading-a-page
+https://github.com/careydevelopment/careydevelopmentcrm/tree/0.2.9-support-activities
+11.1.1
+"rxjs": "~6.6.3"
+customer relationship management (CRM) application using Angular, Spring Boot, and MongoDB.
+Angular customer relationship management (CRM) app.
+java api angular microservices mongodb crm
+
+
+
+https://www.angular.love/en/2022/01/25/rxjs-used-in-angular-knowledge-in-a-nutshell/
+
+
+https://www.thisdot.co/blog/understanding-switchmap-and-forkjoin-operators-in-rxjs-with-typescript
+https://stackblogger.com/rxjs-forkjoin-definition-and-real-world-uses/
+https://indepth.dev/reference/rxjs/operators/fork-join
+https://www.digitalocean.com/community/tutorials/rxjs-operators-forkjoin-zip-combinelatest-withlatestfrom
+https://javascript.plainenglish.io/practical-examples-to-explain-forkjoin-zip-withlatestfrom-and-combinelatest-operators-2a1a9cd862cf
+
+https://blog.briebug.com/blog/understanding-the-forkjoin-rxjs-operator
+
+Performing multiple HTTP requests in Angular with forkJoin
+https://medium.com/@swarnakishore/performing-multiple-http-requests-in-angular-4-5-with-forkjoin-74f3ac166d61
+
+https://www.htmlgoodies.com/javascript/rxjs-observables-combinelatest-forkjoin/
+https://www.htmlgoodies.com/javascript/rxjs-observables-in-angular/
+
+
+
+
+
+map
+Observable
+Observer
+pipe
+shareReplay
+Subject
+Subscription
+take
+tap
+throwError
+timer

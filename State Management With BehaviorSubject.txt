@@ -1,0 +1,9 @@
+Angular State Management With BehaviorSubject
+https://dev.to/ngconf/angular-state-management-with-behaviorsubject-22b0
+Jim Armstrong
+The application contains three simple menu options, which represent primary paths through the application. They are named Path 1, Path 2, and Path 3.
+
+https://github.com/theAlgorithmist/AngularStateManagement
+8.0.1
+rxjs": "~6.4.0
+This application might be considered a counter on steroids as it counts the number of times various routes (eager- and lazy-loaded) are loaded by a user. Counts are displayed in the UI which provides three initial options, path 1, 2, and 3. Paths 1 and 3 are eagerly loaded; path 2 is lazy-loaded. The application contains an app-wide model as well as a model specific to path 2. Path 2 contains two child components which are routed into the main application's outlet. In the demo, it is necessary to use the back button the navigate from a path-2 child route back to the main path-2 component. This provides an opportunity for the reader to modify the code to implement a separate router outlet in path 2. Some other opportunities for modification are provided in the documentation.

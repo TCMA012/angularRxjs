@@ -1,0 +1,18 @@
+Reactive programming in Angular
+https://medium.com/@solisarg/reactive-programming-in-angular-acdd369a7155
+
+ngrx
+Store
+As a single source of truth, NgRx Store provides state management for creating maintainable, explicit applications through the use of single state and actions in order to express state changes
+Actions
+Actions express unique events that happen throughout your application and solve component interaction and communication.
+Reducers
+Reducers are responsible for handling transitions from one state to the next state in your application. Reducer functions handle these transitions by determining which actions to handle based on the action’s type.
+Selectors
+Selectors are pure functions used for obtaining slices of store state. Selectors are memoized and composable, so all the data filtering/manipulation is done here to feed the component with what it needs to be display
+Effects
+Effects are an RxJS powered side effect model for Store. Effects use streams to provide new sources of actions to reduce state based on external interactions such as network requests, web socket messages and time-based events.
+
+
+
+Redux devtools

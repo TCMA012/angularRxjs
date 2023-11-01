@@ -1,0 +1,36 @@
+How to Unsubscribe from Observables
+https://dev.to/nikosanif/4-1-ways-how-to-unsubscribe-from-observables-in-angular-like-a-21f5
+
+https://github.com/ngneat/until-destroy
+C:\Angular Rxjs\until-destroy-master
+
+we attach the @UntilDestroy() decorator at our component and then we pass the 
+untilDestroyed operator in observable's pipe.
+
+=
+
+Using dependency injection to automatically unsubscribe from an Observable
+https://dev.to/this-is-angular/using-dependency-injection-to-automatically-unsubscribe-from-an-observable-30fi
+the inject function which allows us to inject a token from the currently active injector.
+adding @Self() DI decorator when injecting the DestroyService. Angular will throw an error if we forgot adding DestroyService in component’s providers at run time.
+
+ESLint rule
+https://www.npmjs.com/package/eslint-plugin-ngx-eslint
+
+=
+
+https://taiga-ui.dev/services/destroy-service
+
+=
+
+DRY Way to Manage Subscriptions in Angular Components
+https://dev.to/this-is-angular/dry-way-to-manage-subscriptions-in-angular-components-256j
+
+It’s a good idea to destroy observables using a helper class but not recommend to do this way as it causes each class or component to inherit the helper class to just destroy a subscription. If you 
+expect a observer and want to kill it just Do 
+pipe(take(1)) and if you 
+
+expect a promise like user profile api request 
+use.toPromise() instead of .subscribe(). 
+
+using to helper method just cause extra code that’s not need.

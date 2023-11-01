@@ -1,0 +1,58 @@
+Simplifying Front-End State Management with Observable Store
+https://blog.codewithdan.com/simplifying-front-end-state-management-with-observable-store/
+https://github.com/DanWahlin/Observable-Store
+Dan Wahlin Angular "Observable Store"
+Dan Wahlin Angular Observable Store
+Angular, React, Vue.js, or any other
+Observable Store only has 1 dependency – RxJS
+
+TypeScript use a generic to pass the shape of the data that gets stored in the store (pass a class or interface).
+
+
+
+unsubscribe in ngOnDestroy() 
+check out SubSink on npm for a nice way to easily subscribe/unsubscribe
+
+angular-simple-store
+angular-state-changed
+"@codewithdan/observable-store": "^2.2.13",
+"@codewithdan/observable-store-extensions": "^2.2.9",
+"rxjs": "~6.6.0",
+
+
+
+auto-unsubscribe.decorator.ts
+https://github.com/NetanelBasal/ngx-auto-unsubscribe/blob/master/src/auto-unsubscribe.ts
+For Angular 9+, use until-destroy !!!!!!!!!!!!!!!!!!!!!!!!
+https://github.com/ngneat/until-destroy
+RxJS operator that unsubscribe from observables on destroy
+
+ 
+ 
+angular-store
+12.1.1",
+    "@codewithdan/observable-store": "^2.2.13",
+    "@codewithdan/observable-store-extensions": "^2.2.9"
+	rxjs": "~6.6.0
+	subsink": "^1.0.2
+
+observable-store-demo
+    "@codewithdan/observable-store": "^2.2.13",
+    "@codewithdan/observable-store-extensions": "^2.2.9",
+    "rxjs": "~6.6.0",
+    "angular-in-memory-web-api": "^0.11.0",
+    "primeicons": "^4.1.0",
+    "primeng": "^12.0.0",
+    "subsink": "^1.0.2"
+	
+=
+
+State Management Is Easy Now!? An Introduction to Observable Store
+https://dev.to/stevewhitmore/state-management-is-easy-now-an-introduction-to-observable-store-15ij
+
+https://github.com/stevewhitmore/observable-store-poc
+14.2.0
+@angular/material": "^14.2.5"
+rxjs": "~7.5.0"
+@codewithdan/observable-store": "^2.2.14"
+subsink": "^1.0.2"

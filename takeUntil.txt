@@ -1,0 +1,97 @@
+angular takeUntil
+https://benlesh.medium.com/rxjs-dont-unsubscribe-6753ed4fda87
+
+https://ncjamieson.com/avoiding-takeuntil-leaks/
+the general rule is that takeUntil should be the last operator in the sequence
+However, there are some situations in which you might want to use it as the second-last operator.
+you can ensure that it’s always the last operator passed to pipe by enabling the 
+rxjs-no-unsafe-takeuntil rule that I’ve added to 
+rxjs-tslint-rules package.
+
+
+
+Best Practices for Managing RxJS Subscriptions
+https://www.thisdot.co/blog/best-practices-for-managing-rxjs-subscriptions
+A third-party library developed by Netanel Basal https://netbasal.com/
+We can use it similarly to takeUntil:
+
+import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+
+@UntilDestroy()
+@Component({
+    selector: 'home'
+})
+export class HomeComponent implements OnInit {
+  ngOnInit() {
+    obs$
+      .pipe(untilDestroyed(this))
+      .subscribe(data => this.doSoemthingWithDataReceived(data));
+  }
+}
+It can also find which properties in your component are Subscription objects and automatically unsubscribe from them:
+
+@UntilDestroy({ checkProperties: true })
+@Component({
+    selector: 'home'
+})
+export class HomeComponent {
+
+  subscription = obs$
+      .pipe(untilDestroyed(this))
+      .subscribe(data => this.doSoemthingWithDataReceived(data));
+}
+
+
+
+https://stackoverflow.com/questions/38008334/angular-rxjs-when-should-i-unsubscribe-from-subscription
+there are two kinds of Observables - finite value and infinite value.
+http Observables produce finite (1) values and something like 
+a DOM event listener Observable produces infinite values.
+
+If you manually call subscribe (not using async pipe), then unsubscribe from infinite Observables.
+Don't worry about finite ones, RxJs will take care of them.
+
+
+
+https://stackoverflow.com/questions/38008334/angular-rxjs-when-should-i-unsubscribe-from-subscription/41177163#41177163
+I mention in a comment to Nicholas' blog that over-use of takeUntil() could be a sign that your component is trying to do too much and that separating your existing components into 
+ and Presentational components should be considered. You can then | async the Observable from the Feature component into an Input of the Presentational component, which means no subscriptions are necessary anywhere. Read more about this approach here.
+Angular Architecture - Smart Components vs Presentational Components
+https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/
+
+
+
+https://github.com/ngneat/until-destroy
+C:\Angular Rxjs\until-destroy-master
+RxJS operator that unsubscribe from observables on destroy
+
+The order of decorators is important, make sure to put @UntilDestroy() before the @Component() decorator.
+When using overrideComponent in unit tests remember that it overrides metadata and component definition. Invoke UntilDestroy()(YourComponent); to reapply the decorator. See here for an example.
+https://github.com/ngneat/until-destroy/issues/91#issuecomment-626470446
+
+make sure until destroy is the last operator in your pipe, until destroy before a switch map can lead to leaky subscriptions.
+
+
+
+I prefer keeping the amount of npm dependencies to a minimum. I've seen people use this package, but you still have to add the decorator and don't forget to add the until destroy pipe.
+So I don't really see the big advantage over doing it manually for each component which takes about 3 more lines of code in the component. If you still want to get rid of these 3 lines, you can still build the decorator yourself, and don't have to be dependent on some library whose maintenance you don't have control over.
+
+
+
+https://www.angular.love/en/2021/11/18/angular-tips-tricks-part-viii/
+
+
+
+https://www.bampouris.eu/blog/avoid-memory-leaks-angular/
+https://github.com/theoklitosBam7/ng-unsubscribe-examples
+
+
+
+https://levelup.gitconnected.com/unsubscribing-in-angular-the-right-way-6ed82be43ccc
+Angular, being the robust framework it is, internally takes care of unsubscribing from implicitly created observables such as HTTP calls, async pipes, etc. 
+The Observables and Subscriptions which we create however, we have to unsubscribe from them explicitly.
+
+
+
+
+https://javascript.plainenglish.io/angular-meets-rxjs-takeuntil-and-the-async-pipe-4d9c6e3d5c2d

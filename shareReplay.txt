@@ -1,0 +1,5 @@
+shareReplay
+https://ncjamieson.com/whats-changed-with-sharereplay/
+
+https://www.danywalls.com/maximizing-performance-with-angular-and-rxjs-a-guide-to-caching-data
+https://stackblitz.com/edit/angular-ivy-hbf6dc

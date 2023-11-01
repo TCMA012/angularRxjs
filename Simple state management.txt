@@ -1,0 +1,25 @@
+Simple state management in Angular with only Services and RxJS
+https://github.com/nigrosimone/ng-simple-state
+C:\Angular Rxjs\ng-simple-state-main
+demos:
+Counter
+Tour of heroes
+To Do List
+
+14.1.0
+
+Manage component state without service
+
+
+
+If you need to inject something into your store (eg. HttpClient), you need to also inject the Angular Injector service to the super
+HttpClient is not found in demos
+
+
+
+https://stackblitz.com/edit/ng-simple-state-tour-of-heroes?file=src%2Fapp%2Fhero.service.ts
+C:\Angular Rxjs\ng-simple-state-tour-of-heroes
+
+
+
+https://www.maestralsolutions.com/angular-application-state-management-you-do-not-need-external-data-stores/
